@@ -4,9 +4,217 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page__body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <nav class="page-header__main-navigation main-navigation">
+        <a class="main-navigation__logo">
+            <svg aria-label="Логотип приложения Pink" width="74" height="43">
+            </svg>
+        </a>
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item"><a>Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="site-list__item"><a href="blank.html">Конкурс</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Pink</h1>
+
+      <section class="download">
+        <div class="download__wrapper">
+          <h2 class="visually-hidden">Скачать приложение Pink</h2>
+          <p class="download__slogan">Взгляните на жизнь иначе</p>
+          <a class="download__link button" href="https://apps.apple.com">Скачать приложение</a>
+          <ul class="download__market market">
+            <li class="market__item"><a class="market__link market__link--apple" href="https://apps.apple.com">Скачать приложение для Apple</a></li>
+            <li class="market__item"><a class="market__link market__link--android" href="https://play.google.com/store/apps">Скачать приложение для Android</a></li>
+            <li class="market__item"><a class="market__link market__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows">Скачать приложение для Windows</a></li>
+          </ul>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features__wrapper">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <p class="features__title">Устали от серости мегаполиса?</p>
+          <p class="features__subtitle">Нам есть, что вам предложить!</p>
+          <ul class="features__list">
+            <li class="features__item features__item--mood">
+              <h3 class="features__caption">Поднимает настроение</h3>
+              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item features__item--change-world">
+              <h3 class="features__caption">Меняет мир вокруг</h3>
+              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item features__item--new-friends">
+              <h3 class="features__caption">Заводит новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы о приложении</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <div class="reviews__author-info">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles slider__toggle">
+            <button class="slider__toggle slider__toggle--active" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="price">
+        <div class="price__wrapper slider">
+          <h2 class="visually-hidden">Стоимость приложения Pink</h2>
+          <table class="price__table tariff">
+            <tr>
+              <th class="tariff__head">
+              </th>
+              <th class="tariff__head">
+                <p class="tariff__type">База</p>
+                <p class="tariff__price">1,99 USD</p>
+              </th>
+              <th class="tariff__head tariff__head--active">
+                <p class="tariff__type">Стандарт</p>
+                <p class="tariff__price">3,99 USD</p>
+              </th>
+              <th class="tariff__head">
+                <p class="tariff__type">Анлим</p>
+                <p class="tariff__price">9,99 USD</p>
+              </th>
+            </tr>
+            <tr>
+              <td class="tariff__list tariff__list--hidden">Розовый фильтр</td>
+              <td class="tariff__list">
+                <span class="tariff__option tariff__option--hidden">Розовый фильтр</span>
+                <span class="tariff__value--true">
+                  <span class="visually-hidden">Включено</span>
+                </span>
+              </td>
+              <td class="tariff__list">
+                <span class="tariff__option tariff__option--hidden">Розовый фильтр</span>
+                <span class="tariff__value--true">
+                  <span class="visually-hidden">Включено</span>
+                </span>
+              </td>
+              <td class="tariff__list">
+                <span class="tariff__option tariff__option--hidden">Розовый фильтр</span>
+                <span class="tariff__value--true">
+                  <span class="visually-hidden">Включено</span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff__list tariff__list--hidden">Смайлики</td>
+              <td class="tariff__list">
+                <span class="tariff__option tariff__option--hidden">Смайлики</span>
+                <span class="tariff__value--false">
+                  <span class="visually-hidden">Не включено</span>
+                </span>
+              </td>
+              <td class="tariff__list">
+                <span class="tariff__option tariff__option--hidden">Смайлики</span>
+                <span class="tariff__value--true">
+                  <span class="visually-hidden">Включено</span>
+                </span>
+              </td>
+              <td class="tariff__list">
+                <span class="tariff__option tariff__option--hidden">Смайлики</span>
+                <span class="tariff__value--true">
+                  <span class="visually-hidden">Включено</span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff__list tariff__list--hidden">Комментарии</td>
+              <td class="tariff__list">
+                <span class="tariff__option tariff__option--hidden">Комментарии</span>
+                <span class="tariff__value--false">
+                  <span class="visually-hidden">Не включено</span>
+                </span>
+              </td>
+              <td class="tariff__list">
+                <span class="tariff__option tariff__option--hidden">Комментарии</span>
+                <span class="tariff__value--false">
+                  <span class="visually-hidden">Не включено</span>
+                </span>
+              </td>
+              <td class="tariff__list">
+                <span class="tariff__option tariff__option--hidden">Комментарии</span>
+                <span class="tariff__value--true">
+                  <span class="visually-hidden">Включено</span>
+                </span>
+              </td>
+            </tr>
+          </table>
+          <p class="price__toggles slider__toggle">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--active" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контактные данные</h2>
+        <div class="contacts__wrapper">
+          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+          <div class="contacts__list">
+            <h3 class="contacts__item">Звоните</h3>
+            <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <h3 class="contacts__item">Пишите</h3>
+            <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <h3 class="contacts__item">Приезжайте в гости:</h3>
+            <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </div>
+
+        <div class="map__wrapper">
+          <h3 class="visually-hidden">Карта</h3>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo logo">
+          <a class="logo__img" href="#">
+            <svg aria-label="Логотип приложения Pink" width="145" height="40">
+            </svg>
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com">Мы в Твиттере</a></li>
+            <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a></li>
+            <li class="social__item"><a class="social__link social__link--youtube" href="https://www.youtube.com/">Мы на Ютубе</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
