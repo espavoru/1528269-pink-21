@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff2.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff2.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff2.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+/*fonts*/
+/*colors*/
+/*size*/
+.page {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  min-width: 320px;
+  background-color: white;
+  margin: 0;
+  padding: 0; }
+
+.page a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.page-header {
+  color: white;
+  background-color: #1d2631;
+  width: 100%;
+  margin: 0; }
+
+.main-navigation__list {
+  margin: 0;
+  padding: 0; }
+
+.site-list__item {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid fade(white, 15%);
+  border-bottom: 1px solid black;
+  box-shadow: 0 -1px 0 black, inset 0 1px 0 rgba(255, 255, 255, 0.15); }
+
+.site-list__link:link, .site-list__link:visited {
+  color: white; }
+
+.site-list__link:hover, .site-list__link:focus {
+  color: #d22856; }
+
+.site-list__link:active {
+  color: #d22856;
+  opacity: 0.3; }
+
+.download__wrapper {
+  color: white;
+  text-align: center;
+  background-color: #1d2631;
+  background-image: url("../img/back-mobile.jpg");
+  background-position: center top;
+  background-repeat: no-repeat; }
+
+.download__slogan {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 320px; }
+
+.download__text {
+  font-weight: 300; }
+
+.download__market {
+  list-style: none; }
+
+.button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 30px 16px;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+  .button--download {
+    border: 3px solid white;
+    border-radius: 29px;
+    color: white;
+    background-color: transparent;
+    margin-top: 28px;
+    margin-bottom: 38px; }
+
+.features {
+  padding-top: 46px; }
+
+.features__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  margin: 0;
+  text-align: center; }
+  .features__title--subtitle {
+    padding-top: 46px; }
+
+.features__list {
+  list-style: none;
+  text-align: center;
+  background-color: #f2f2f2;
+  background-image: url("../img/greybackground1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 325px; }
+
+.features__caption {
+  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 6px; }
+
+.reviews__wrapper {
+  color: #283645; }
+
+.reviews__author-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 50px; }
+
+.reviews__text {
+  line-height: 30px; }
+
+.price__wrapper {
+  background-color: #f2f2f2;
+  background-image: url("../img/greybackground2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 30px; }
+
+.price__table {
+  border-collapse: separate;
+  border-spacing: 2px; }
+
+.tariff__head {
+  color: white;
+  text-transform: uppercase;
+  background-color: #283645;
+  width: 276px; }
+
+.tariff__type {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 19px; }
+
+.tariff__price {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 35px; }
+
+.tariff__list {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px; }
+
+.map {
+  width: 320px;
+  height: 200px;
+  background-image: url("../img/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.contacts__wrapper {
+  margin-top: 47px;
+  text-align: center;
+  background-image: url("../img/trianglewhitefooter.png");
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+.contacts__title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  margin-bottom: 45px; }
+
+.contacts__item {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: bold;
+  margin-bottom: 0; }
+
+.contacts__info {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  color: #d22856;
+  margin: 0; }
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */
