@@ -1,0 +1,22 @@
+.button {
+  font-family: $font;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 30px 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--download {
+    border: 3px solid $white;
+    border-radius: 29px;
+    color: $white;
+    background-color: transparent;
+    margin-top: 28px;
+    margin-bottom: 38px;
+  }
+}

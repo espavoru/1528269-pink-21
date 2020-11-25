@@ -1,0 +1,32 @@
+.site-list__item {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  background-color: $bluedark;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $black;
+  box-shadow: 0 -1px 0 $black,
+    inset 0 1px 0 rgba($white, 0.15);
+}
+
+.site-list__link {
+  &:link,
+  &:visited {
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
+
+  &:active {
+    color: $pink;
+    opacity: 0.3;
+  }
+}

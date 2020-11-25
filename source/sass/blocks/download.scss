@@ -1,0 +1,27 @@
+.download__wrapper {
+  color: $white;
+  text-align: center;
+  background-color: $bluedarken;
+  background-image: url("../img/back-mobile.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.download__slogan {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 320px;
+}
+
+
+.download__text {
+  font-weight: 300;
+}
+
+
+.download__market {
+  list-style: none;
+}
