@@ -6,9 +6,9 @@
   text-transform: uppercase;
   text-decoration: none;
   list-style: none;
+  background-color: $bluedark;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid fade($white, 15%);
   border-bottom: 1px solid $black;
   box-shadow: 0 -1px 0 $black,
     inset 0 1px 0 rgba($white, 0.15);
