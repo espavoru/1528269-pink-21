@@ -32,6 +32,10 @@
 .page a {
   text-decoration: none; }
 
+.page__body {
+  margin: 0;
+  padding: 0; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -67,9 +71,9 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   list-style: none;
+  background-color: #283645;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid fade(white, 15%);
   border-bottom: 1px solid black;
   box-shadow: 0 -1px 0 black, inset 0 1px 0 rgba(255, 255, 255, 0.15); }
 
@@ -147,6 +151,7 @@ img {
   padding-bottom: 325px; }
 
 .features__caption {
+  color: black;
   font-size: 18px;
   padding-top: 25px;
   padding-bottom: 6px; }
@@ -155,6 +160,7 @@ img {
   color: #283645; }
 
 .reviews__author-name {
+  color: black;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
