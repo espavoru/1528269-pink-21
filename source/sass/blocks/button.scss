@@ -19,4 +19,12 @@
     margin-top: 28px;
     margin-bottom: 38px;
   }
+
+  &--modal {
+    color: $white;
+    text-transform: uppercase;
+    background-color: $green;
+    border: 2px solid $green;
+    border-radius: 1px;
+  }
 }

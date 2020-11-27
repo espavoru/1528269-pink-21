@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
@@ -15,10 +16,10 @@
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фотографии</a></li>
             <li class="site-list__item"><a>Конкурс</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -36,23 +37,23 @@
         <form class="contest__form contest-form" action="https://echo.htmlacademy.ru" method="post">
 
           <div class="contest-form__title">
-            <p class="contest-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+            <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
           </div>
 
           <div class="contest-form__wrapper contest-form__wrapper--fullname">
             <fieldset class="contest-form__fieldset">
               <ul class="contest-form__list">
                 <li class="contest-form__item">
-                  <label class="contest-form__label" for="last-name">Фамилия</label>
-                  <input class="contest-form__text" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
+                  <label class="contest-form__subject" for="last-name">Фамилия</label>
+                  <input class="contest-form__input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
                 </li>
                 <li class="contest-form__item">
-                  <label class="contest-form__label" for="name">Имя</label>
-                  <input class="contest-form__text" id="name" type="text" name="name" placeholder="Введите ваше имя *">
+                  <label class="contest-form__subject" for="name">Имя</label>
+                  <input class="contest-form__input" id="name" type="text" name="name" placeholder="Введите ваше имя *">
                 </li>
                 <li class="contest-form__item">
-                  <label class="contest-form__label" for="middle-name">Отчество</label>
-                  <input class="contest-form__text" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже" required>
+                  <label class="contest-form__subject" for="middle-name">Отчество</label>
+                  <input class="contest-form__input" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже" required>
                 </li>
               </ul>
             </fieldset>
@@ -60,7 +61,7 @@
 
           <div class="contest-form__wrapper contest-form__wrapper--achievements">
             <fieldset class="contest-form__fieldset">
-              <legend class="contest-form__title">Ваши безбашенные достижения в путешествии</legend>
+              <legend class="contest-form__subject">Ваши безбашенные достижения в путешествии</legend>
               <ul class="contest-form__list">
                 <li class="contest-form__item">
                   <input class="visually-hidden contest-form__checkbox" type="checkbox" name="shark" value="shark" id="shark" checked>
@@ -94,12 +95,12 @@
             <fieldset class="contest-form__fieldset">
               <ul class="contest-form__list">
                 <li class="contest-form__item">
-                  <label class="contest-form__label" for="phone-number">Номер телефона</label>
-                  <input class="contest-form__text" id="phone-number" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                  <label class="contest-form__subject" for="phone-number">Номер телефона</label>
+                  <input class="contest-form__input" id="phone-number" type="tel" name="phone" placeholder="Номер, пожалуйста">
                 </li>
                 <li class="contest-form__item">
-                  <label class="contest-form__label" for="email">Адрес почты</label>
-                  <input class="contest-form__text" id="email" type="email" name="email" placeholder="Введите почту *" required>
+                  <label class="contest-form__subject" for="email">Адрес почты</label>
+                  <input class="contest-form__input" id="email" type="email" name="email" placeholder="Введите почту *" required>
                 </li>
               </ul>
             </fieldset>
@@ -107,7 +108,7 @@
 
           <div class="contest-form__wrapper contest-form__wrapper--apps">
             <fieldset class="contest-form__fieldset">
-              <legend class="contest-form__title">С каким приложением путешествовали?</legend>
+              <legend class="contest-form__subject">С каким приложением путешествовали?</legend>
               <ul class="contest-form__list">
                 <li class="contest-form__item">
                   <input class="visually-hidden contest-form__radio" type="radio" name="ios" value="ios" id="ios" checked>
@@ -127,14 +128,14 @@
 
           <div class="contest-form__wrapper contest-form__wrapper--description">
             <fieldset class="contest-form__fieldset">
-              <legend class="contest-form__title">Опишите свои эмоции</legend>
-              <textarea class="contest-form__text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <legend class="contest-form__subject">Опишите свои эмоции</legend>
+              <textarea class="contest-form__input" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
 
           <div class="contest-form__wrapper contest-form__wrapper--submit">
-            <button class="contest-form__button button-modal" type="submit">Отправить форму</button>
-            <p class="contest-form__legend">* — обязательные поля</p>
+            <button class="contest-form__button button button--modal" type="submit">Отправить форму</button>
+            <p class="contest-form__legend"><span class="contest-form__pink">*</span> — обязательные поля</p>
           </div>
 
         </form>
@@ -164,11 +165,11 @@
     </footer>
 
     <section class="popup popup--error">
-      <div class="popup__wrapper">
+      <div class="popup__wrapper popup__wrapper--error">
         <h1 class="popup__title">Что-то пошло не так!</h1>
-        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <p class="popup__text popup__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <div class="popup__button-area">
-          <button class="popup__button button-modal" type="button">Ок</button>
+          <button class="popup__button button button--modal" type="button">Ок</button>
         </div>
       </div>
     </section>
@@ -176,9 +177,9 @@
     <section class="popup popup--success">
       <div class="popup__wrapper">
         <h1 class="popup__title">Ваша заявка отправлена</h1>
-        <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <p class="popup__text popup__text--success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
         <div class="popup__button-area popup__button-area--success">
-          <button class="popup__button button-modal" type="button">Закрыть окно</button>
+          <button class="popup__button button button--modal" type="button">Закрыть окно</button>
         </div>
       </div>
     </section>

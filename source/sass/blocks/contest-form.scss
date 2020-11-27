@@ -1,0 +1,55 @@
+.contest-form__wrapper {
+  line-height: 30px;
+  padding-top: 42px;
+  padding-bottom: 44px;
+
+  &--achievements {
+    background-color: $gray;
+  }
+
+  &--apps {
+    background-color: $gray;
+  }
+}
+
+.contest-form__title {
+  line-height: 30px;
+  text-align: center;
+  margin-top: 54px;
+  margin-bottom: 13px;
+}
+
+.contest-form__fieldset {
+  border: none;
+}
+
+.contest-form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contest-form__subject {
+  color: $pink;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.contest-form__input {
+  font-size: 18px;
+  color: $bluedark;
+  border: 2px solid $graylight;
+  border-radius: 1px;
+}
+
+.contest-form__text {
+  font-size: 18px;
+}
+
+.contest-form__pink {
+  color: pink;
+}
+
+.contest-form__legend {
+  text-transform: uppercase;
+}
