@@ -28,3 +28,18 @@
     border-radius: 1px;
   }
 }
+
+.button__upload {
+  border: 3px solid $pink;
+  border-radius: 29px;
+  color: $pink;
+  background-color: transparent;
+}
+
+.button__upload-reset {
+  border: 3px solid $bluedark;
+  border-radius: 29px;
+  color: $bluedark;
+  opacity: 0.1;
+  background-color: transparent;
+}
