@@ -1,10 +1,18 @@
 .download__wrapper {
+  @include container;
   color: $white;
   text-align: center;
   background-color: $bluedarken;
   background-image: url("../img/back-mobile.jpg");
   background-position: center top;
   background-repeat: no-repeat;
+
+  @media (min-width: $medium-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 .download__slogan {
@@ -23,5 +31,9 @@
 
 
 .download__market {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }

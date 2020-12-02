@@ -1,12 +1,14 @@
 @import "global/fonts";
 @import "global/variables";
 @import "global/page";
+@import "global/mixins";
 @import "blocks/page-header";
 @import "blocks/main-navigation";
 @import "blocks/site-list";
 @import "blocks/download";
 @import "blocks/button";
 @import "blocks/features";
+@import "blocks/news";
 @import "blocks/reviews";
 @import "blocks/price";
 @import "blocks/tariff";
@@ -18,3 +20,4 @@
 @import "blocks/popup";
 @import "blocks/gallery";
 @import "blocks/photo-load";
+@import "blocks/page-footer";

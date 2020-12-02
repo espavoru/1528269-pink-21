@@ -3,9 +3,11 @@
   font-size: $font-size;
   line-height: $line-height;
   color: $bluedark;
-  min-width: $small-width;
   background-color: $white;
-  margin: 0;
+  min-width: $small-width;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
 }
 

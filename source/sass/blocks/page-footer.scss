@@ -1,0 +1,13 @@
+.page-footer__wrapper {
+  @include container;
+  text-align: center;
+
+  @media (min-width: $medium-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+}

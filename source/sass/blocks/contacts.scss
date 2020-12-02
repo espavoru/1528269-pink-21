@@ -1,4 +1,5 @@
 .contacts__wrapper {
+  @include container;
   margin-top: 47px;
   text-align: center;
   background-image: url("../img/trianglewhitefooter.png");
@@ -13,7 +14,6 @@
   margin-bottom: 45px;
 }
 
-
 .contacts__item {
   font-size: 18px;
   line-height: 25px;
@@ -21,11 +21,34 @@
   margin-bottom: 0;
 }
 
-
 .contacts__info {
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
   color: $pink;
   margin: 0;
+}
+
+.contacts__list {
+  @media (min-width: $medium-width) {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+  }
+
+  @media (min-width: $large-width) {
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+
+.contacts__list-adress {
+  @media (min-width: $medium-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  @media (min-width: $large-width) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
 }

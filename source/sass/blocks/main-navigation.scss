@@ -1,4 +1,22 @@
+.main-navigation__wrapper {
+  width: 100%;
+}
+
 .main-navigation__list {
+  list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $large-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.main-navigation__toggle {
+  @media (min-width: $large-width) {
+    display: none;
+  }
 }

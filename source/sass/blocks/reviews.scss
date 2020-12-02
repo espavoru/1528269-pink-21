@@ -1,8 +1,14 @@
 
 .reviews__wrapper {
+  @include container;
   color: $bluedark;
+  text-align: center;
 }
 
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
+}
 
 .reviews__author-name {
   color: $black;
@@ -11,9 +17,26 @@
   font-style: normal;
   font-weight: bold;
   margin-top: 50px;
+
+  @media (min-width: $medium-width) {
+    order: 2;
+  }
 }
 
+.reviews__about-author {
+  display: none;
+
+  @media (min-width: $medium-width) {
+    display: block;
+    order: 2;
+  }
+}
 
 .reviews__text {
   line-height: 30px;
+  order: 2;
+
+  @media (min-width: $medium-width) {
+    order: 1;
+  }
 }
