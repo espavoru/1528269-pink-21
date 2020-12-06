@@ -1,7 +1,37 @@
 .map {
-  width: 320px;
-  height: 200px;
-  background-image: url("../img/map.jpg");
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background-image: url("../img/map-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 1;
+
+  @media (min-width: $medium-width) {
+    height: 374px;
+    background-image: url("../img/map-table.jpg");
+  }
+
+  @media (min-width: $large-width) {
+    height: 502px;
+    background-image: url("../img/map-desktop.jpg");
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 1200px;
+    height: 123px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+
+    @media (min-width: $large-width) {
+      top: 0;
+    }
+  }
 }

@@ -19,7 +19,13 @@
   margin-top: 50px;
 
   @media (min-width: $medium-width) {
+    font-size: 20px;
     order: 2;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $large-width) {
+    font-size: 24px;
   }
 }
 
@@ -29,6 +35,11 @@
   @media (min-width: $medium-width) {
     display: block;
     order: 2;
+    margin-top: 5px;
+  }
+
+  @media (min-width: $large-width) {
+    font-size: 18px;
   }
 }
 
@@ -37,6 +48,7 @@
   order: 2;
 
   @media (min-width: $medium-width) {
+    font-size: 18px;
     order: 1;
   }
 }

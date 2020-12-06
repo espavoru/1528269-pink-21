@@ -18,10 +18,13 @@
     box-shadow: none;
     text-transform: none;
     font-weight: 400;
+    margin-right: 80px;
   }
 }
 
 .site-list__link {
+  text-decoration: none;
+
   &:link,
   &:visited {
     color: $white;

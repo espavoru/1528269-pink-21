@@ -1,10 +1,31 @@
-.download__wrapper {
-  @include container;
-  color: $white;
-  text-align: center;
+.download {
+  position: relative;
+  z-index: -1;
+  margin-top: -66px;
   background-color: $bluedarken;
   background-image: url("../img/back-mobile.jpg");
-  background-position: center top;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  @media (min-width: $medium-width) {
+    margin-top: -110px;
+    background-image: url("../img/back-tablet.jpg");
+  }
+
+  @media (min-width: $large-width) {
+    background-image: url("../img/back-desktop.jpg");
+  }
+}
+
+.download__wrapper {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $white;
+  text-align: center;
+  background-image: url("../img/hand-mobile.png");
+  background-position: center 177px;
   background-repeat: no-repeat;
 
   @media (min-width: $medium-width) {
@@ -12,28 +33,72 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-image: url("../img/hand-tablet.png");
+    background-position: -20px bottom;
+  }
+
+  @media (min-width: $large-width) {
+    background-image: url("../img/hand-desktop.png");
+    background-position: bottom left 50px;
   }
 }
 
 .download__slogan {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 29px;
   font-weight: 300;
+  width: 300px;
   margin: 0;
-  padding-top: 29px;
+  padding-top: 95px;
   padding-bottom: 320px;
+
+  @media (min-width: $medium-width) {
+    font-size: 40px;
+    line-height: 48px;
+    padding-top: 183px;
+    padding-bottom: 39px;
+  }
+
+  @media (min-width: $large-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 220px;
+    padding-bottom: 50px;
+  }
 }
 
 
 .download__text {
   font-weight: 300;
+  margin: 0;
+  padding-bottom: 38px;
+
+  @media (min-width: $medium-width) {
+    font-size: 18px;
+    padding-bottom: 119px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-bottom: 130px;
+  }
 }
 
 
 .download__market {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: stretch;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.market__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-left: 22px;
+  padding-right: 22px;
+  min-height: 60px;
+  padding-bottom: 16px;
 }
