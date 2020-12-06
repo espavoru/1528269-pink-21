@@ -508,16 +508,16 @@ img {
 
 .price {
   background-image: url("../img/greybackground2.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .price__wrapper {
   padding-right: 20px;
   padding-left: 20px;
   margin: 0 auto;
   position: relative;
-  padding-top: 130px; }
+  padding-top: 130px;
+  overflow: hidden; }
   @media (min-width: 960px) {
     .price__wrapper {
       padding-right: 10px;
@@ -639,12 +639,11 @@ img {
     content: "";
     background-image: url("../img/triangle-white-footer.svg");
     background-repeat: no-repeat;
-    background-size: auto;
-    width: 1200px;
+    background-position-x: center;
+    width: 100%;
     height: 123px;
     z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     top: -50px; }
     @media (min-width: 960px) {
       .map::before {
@@ -695,12 +694,12 @@ img {
 @media (min-width: 660px) {
   .contacts__list {
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 1fr 1fr;
     justify-content: center; } }
 
 @media (min-width: 960px) {
   .contacts__list {
-    grid-template-columns: 350px 350px 350px; } }
+    grid-template-columns: 1fr 1fr 1fr; } }
 
 @media (min-width: 960px) {
   .contacts__list-mail {
