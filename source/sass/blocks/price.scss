@@ -1,12 +1,36 @@
-.price__wrapper {
-  background-color: $gray;
-  background-image: url("../img/greybackground2.png");
-  background-position: center;
+.price {
+  background-image: url("../img/greybackground2.svg");
+  background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 30px;
+}
+
+.price__wrapper {
+  @include container;
+  position: relative;
+  padding-top: 130px;
+  overflow: hidden;
+
+  @media (min-width: $medium-width) {
+    padding-top: 114px;
+    padding-bottom: 68px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-top: 159px;
+    padding-bottom: 96px;
+  }
 }
 
 .price__table {
+  position: absolute;
   border-collapse: separate;
   border-spacing: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  @media (min-width: $medium-width) {
+    position: static;
+    transform: none;
+  }
 }

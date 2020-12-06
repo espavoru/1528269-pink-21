@@ -1,4 +1,34 @@
+.main-navigation {
+  @include container;
+
+  @media (min-width: $large-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .main-navigation__list {
+  list-style: none;
   margin: 0;
   padding: 0;
+  display: none;
+
+  @media (min-width: $large-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.main-navigation__toggle {
+  @media (min-width: $large-width) {
+    display: none;
+  }
+}
+
+.main-navigation__logo {
+  @media (min-width: $large-width) {
+    margin: 0;
+  }
 }

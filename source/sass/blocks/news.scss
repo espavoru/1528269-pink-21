@@ -1,0 +1,76 @@
+.news {
+  display: none;
+
+  @media (min-width: $medium-width) {
+    display: block;
+    background-color: $white;
+  }
+
+  @media (min-width: $large-width) {
+    background-color: $gray;
+  }
+}
+
+.news__center {
+  @include container;
+}
+
+.news__wrapper {
+  position: relative;
+  display: block;
+  padding-top: 80px;
+  padding-left: 330px;
+  padding-bottom: 120px;
+
+  @media (min-width: $large-width) {
+    padding-left: 380px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/time-table.png");
+    background-repeat: no-repeat;
+    width: 238px;
+    height: 276px;
+    top: 50px;
+    left: 20px;
+
+    @media (min-width: $large-width) {
+      padding-left: 500px;
+      background-image: url("../img/time-desktop.png");
+      width: 298px;
+      height: 345px;
+      top: 50px;
+      left: 11px;
+    }
+  }
+}
+
+.news__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: $black;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.news__text {
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  @media (min-width: $large-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.news__link {
+  color: $pink;
+
+  @media (min-width: $large-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
