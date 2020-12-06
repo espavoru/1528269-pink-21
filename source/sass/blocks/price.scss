@@ -1,15 +1,14 @@
 .price {
   background-image: url("../img/greybackground2.svg");
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .price__wrapper {
   @include container;
   position: relative;
   padding-top: 130px;
-
+  overflow: hidden;
 
   @media (min-width: $medium-width) {
     padding-top: 114px;

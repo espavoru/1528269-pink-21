@@ -22,12 +22,11 @@
     content: "";
     background-image: url("../img/triangle-white-footer.svg");
     background-repeat: no-repeat;
-    background-size: auto;
-    width: 1200px;
+    background-position-x: center;
+    width: 100%;
     height: 123px;
     z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     top: -50px;
 
     @media (min-width: $large-width) {
