@@ -55,6 +55,7 @@
   @media (min-width: $large-width) {
     grid-column-start: 3;
     grid-column-end: 4;
+    order: 3;
   }
 }
 
@@ -67,5 +68,6 @@
   @media (min-width: $large-width) {
     grid-column-start: 2;
     grid-column-end: 3;
+    order: 2;
   }
 }
