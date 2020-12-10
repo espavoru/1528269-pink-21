@@ -7,7 +7,8 @@
   text-decoration: none;
   display: inline-block;
   vertical-align: top;
-  padding: 15px 30px 16px;
+  padding-top: 15px;
+  padding-bottom: 16px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -17,8 +18,17 @@
     border-radius: 29px;
     color: $white;
     background-color: transparent;
+    width: 280px;
     margin-top: 28px;
     margin-bottom: 38px;
+
+    @media (min-width: $medium-width) {
+      width: 300px;
+    }
+
+    @media (min-width: $large-width) {
+      font-size: 21px;
+    }
   }
 
   &--modal {
@@ -27,6 +37,11 @@
     background-color: $green;
     border: 2px solid $green;
     border-radius: 1px;
+    width: 276px;
+
+    @media (min-width: $medium-width) {
+      width: 296px;
+    }
   }
 }
 
