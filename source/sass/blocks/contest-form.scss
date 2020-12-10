@@ -9,7 +9,7 @@
   @media (min-width: $large-width) {
     display: grid;
     justify-content: center;
-    grid-template-columns: 480px 480px;
+    grid-template-columns: repeat(2, minmax(450px, 480px));
   }
 }
 
@@ -29,13 +29,13 @@
   @media (min-width: $large-width) {
     grid-column: 1 / 3;
   }
+}
 
-  &--text-more {
-    display: none;
+.contest-form__headline-more {
+  display: none;
 
-    @media (min-width: $medium-width) {
-      display: block;
-    }
+  @media (min-width: $medium-width) {
+    display: inline-block;
   }
 }
 
@@ -201,6 +201,7 @@
   &--description {
     padding-bottom: 130px;
     margin-top: 20px;
+    resize: none;
 
     @media (min-width: $large-width) {
       padding-bottom: 80px;
@@ -293,11 +294,16 @@
   }
 
   &--fullname {
-    @media (min-width: $large-width) {
+    @media (min-width: $medium-width) {
       display: flex;
       flex-direction: row;
       align-items: center;
       margin-top: 45px;
+      margin-right: 0;
+    }
+
+    @media (min-width: $large-width) {
+      margin-right: 30px;
     }
   }
 }
