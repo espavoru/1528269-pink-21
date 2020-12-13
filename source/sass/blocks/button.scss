@@ -18,9 +18,9 @@
     border-radius: 29px;
     color: $white;
     background-color: transparent;
-    width: 280px;
     margin-top: 28px;
     margin-bottom: 38px;
+    width: 280px;
 
     @media (min-width: $medium-width) {
       width: 300px;
@@ -50,12 +50,20 @@
   border-radius: 29px;
   color: $pink;
   background-color: transparent;
-}
+  margin-top: 24px;
+  width: 280px;
 
-.button__upload-reset {
-  border: 3px solid $bluedark;
-  border-radius: 29px;
-  color: $bluedark;
-  opacity: 0.1;
-  background-color: transparent;
+  @media (min-width: $medium-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 183px;
+  }
+
+  &--reset {
+    border: 3px solid $bluedark;
+    color: $bluedark;
+    opacity: 0.1;
+  }
 }

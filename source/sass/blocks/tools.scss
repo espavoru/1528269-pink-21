@@ -1,0 +1,141 @@
+.tools {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 42px;
+  margin-bottom: 28px;
+  padding-bottom: 34px;
+
+  @media (min-width: $medium-width) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 130px;
+    background-color: rgba($bluedark, 0.1);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: $medium-width) {
+      display: none;
+    }
+  }
+}
+
+.tools__list {
+  &--color {
+    position: absolute;
+    top: 0;
+  }
+
+  &--contrast {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+  }
+
+  @media (min-width: $medium-width) {
+    position: static;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba($bluedark, 0.1);
+    padding: 20px 20px 20px 10px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 410px;
+    padding: 0;
+    padding-bottom: 14px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+
+.tools__img {
+  @media (min-width: $medium-width) {
+    &--cut {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--color {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: $large-width) {
+    &--cut {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--color {
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.tools__range-controls {
+  position: relative;
+  margin-top: 39px;
+
+  &--color,
+  &--contrast {
+    display: none;
+  }
+
+  @media (min-width: $medium-width) {
+    display: block;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+.tools__scale {
+  width: 240px;
+  height: 2px;
+  background-color: $bluedark;
+
+  @media (min-width: $medium-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 288px;
+  }
+}
+
+.tools__toogle {
+  position: absolute;
+  top: -8px;
+  right: 33px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid $pink;
+  background-color: $white;
+  border-radius: 50%;
+  cursor: pointer;
+}
