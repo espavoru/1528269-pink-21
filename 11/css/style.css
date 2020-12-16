@@ -344,7 +344,7 @@ img {
       padding-bottom: 119px; } }
   @media (min-width: 960px) {
     .download__text {
-      padding-bottom: 130px; } }
+      padding-bottom: 125px; } }
 
 .download__market {
   display: flex;
@@ -371,7 +371,7 @@ img {
         padding-left: 45px; } }
   @media (min-width: 960px) {
     .market__item {
-      margin-bottom: 35px; } }
+      margin-bottom: 23px; } }
 
 .button {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -651,7 +651,7 @@ img {
       margin-bottom: -40px; } }
   @media (min-width: 960px) {
     .reviews__wrapper {
-      margin-bottom: 0; } }
+      margin-bottom: -40px; } }
 
 .reviews__item {
   margin: 0; }
@@ -789,8 +789,8 @@ img {
       padding-bottom: 33px; } }
   @media (min-width: 960px) {
     .price__wrapper {
-      padding-top: 150px;
-      padding-bottom: 50px; } }
+      padding-top: 183px;
+      padding-bottom: 60px; } }
 
 .price__table {
   position: absolute;
