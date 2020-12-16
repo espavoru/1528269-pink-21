@@ -33,4 +33,18 @@
       top: 0;
     }
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $pink;
+    border: 10px solid $white;
+    border-radius: 50%;
+  }
 }

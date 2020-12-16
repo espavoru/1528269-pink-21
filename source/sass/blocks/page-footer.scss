@@ -25,18 +25,18 @@
   margin-top: 30px;
 
   @media (min-width: $medium-width) {
-    margin-top: 0;
+    margin-top: 12px;
     justify-content: flex-end;
   }
 }
 
 .page-footer__logo {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   @media (min-width: $medium-width) {
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: auto;
   }
 }
 
@@ -54,10 +54,30 @@
       display: block;
     }
   }
+
+  &:hover {
+    path {
+      fill: $pink;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
   margin-left: 15px;
+
+  &:hover {
+    path {
+      fill: $bluedark;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {

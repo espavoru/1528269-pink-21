@@ -1,6 +1,5 @@
 .download {
   position: relative;
-  z-index: -1;
   margin-top: -66px;
   background-color: $bluedarken;
   background-image: url("../img/back-mobile.jpg");
@@ -34,12 +33,12 @@
     justify-content: center;
     align-items: flex-start;
     background-image: url("../img/hand-tablet.png");
-    background-position: -20px bottom;
+    background-position: 0 bottom;
   }
 
   @media (min-width: $large-width) {
     background-image: url("../img/hand-desktop.png");
-    background-position: bottom left 50px;
+    background-position: bottom left 30px;
   }
 }
 
@@ -55,15 +54,14 @@
   @media (min-width: $medium-width) {
     font-size: 40px;
     line-height: 48px;
-    padding-top: 183px;
-    padding-bottom: 39px;
+    padding-top: 205px;
+    padding-bottom: 12px;
   }
 
   @media (min-width: $large-width) {
     font-size: 50px;
     line-height: 68px;
-    padding-top: 220px;
-    padding-bottom: 50px;
+    padding-top: 210px;
   }
 }
 
@@ -71,10 +69,11 @@
 .download__text {
   font-weight: 300;
   margin: 0;
-  padding-bottom: 38px;
+  padding-bottom: 27px;
 
   @media (min-width: $medium-width) {
     font-size: 18px;
+    padding-top: 8px;
     padding-bottom: 119px;
   }
 
@@ -86,8 +85,10 @@
 
 .download__market {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: stretch;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -95,10 +96,24 @@
 
 .market__item {
   display: flex;
-  justify-content: space-around;
   align-items: flex-end;
-  padding-left: 22px;
-  padding-right: 22px;
   min-height: 60px;
+  margin-left: 30px;
   padding-bottom: 16px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @media (min-width: $medium-width) {
+    &:first-child {
+      padding-left: 45px;
+    }
+
+    padding-left: 5px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 35px;
+  }
 }
