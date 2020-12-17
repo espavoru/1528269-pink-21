@@ -2,6 +2,7 @@
   @include container;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   min-height: 284px;
 
@@ -25,18 +26,22 @@
   margin-top: 30px;
 
   @media (min-width: $medium-width) {
-    margin-top: 0;
+    margin-top: 12px;
     justify-content: flex-end;
   }
 }
 
 .page-footer__logo {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 11px;
+  margin-bottom: 35px;
 
   @media (min-width: $medium-width) {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: -15px;
   }
 }
 
@@ -54,14 +59,42 @@
       display: block;
     }
   }
+
+  &:hover {
+    path {
+      fill: $pink;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
   margin-left: 15px;
+  margin-top: -6px;
+
+  &:hover {
+    path {
+      fill: $bluedark;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
+  margin-top: 7px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 2px;
+  }
+
   @media (min-width: $large-width) {
     font-size: 18px;
+    margin-top: -3px;
   }
 }

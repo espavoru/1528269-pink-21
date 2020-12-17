@@ -18,16 +18,30 @@
     border-radius: 29px;
     color: $white;
     background-color: transparent;
-    margin-top: 28px;
-    margin-bottom: 38px;
+    margin-top: 23px;
+    margin-bottom: 31px;
     width: 280px;
 
     @media (min-width: $medium-width) {
       width: 300px;
+      margin-top: 20px;
+      margin-bottom: 43px;
     }
 
     @media (min-width: $large-width) {
       font-size: 21px;
+      margin-top: 23px;
+      margin-bottom: 68px;
+    }
+
+    &:hover {
+      color: $pink;
+      background-color: $white;
+    }
+
+    &:active {
+      color: rgba($pink, 0.3);
+      background-color: $white;
     }
   }
 

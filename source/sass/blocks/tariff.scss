@@ -2,18 +2,48 @@
   color: $white;
   text-transform: uppercase;
   background-color: $bluedark;
-  padding: 10px 95px 25px 95px;
+  padding: 0 95px 10px 95px;
 
   @media (min-width: $medium-width) {
-    padding: 13px 30px 10px 30px;
+    padding: 13px 32px 10px 30px;
   }
 
   @media (min-width: $large-width) {
-    padding: 20px 60px 18px 60px;
+    padding: 20px 58px 20px 60px;
   }
 
   &--one {
     background-color: transparent;
+  }
+
+  &--active {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      top: 0;
+      left: -3px;
+      background-image: url("../img/hit-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-width: $medium-width) {
+        background-image: url("../img/hit-table.svg");
+        width: 61px;
+        height: 61px;
+        left: 0;
+      }
+
+      @media (min-width: $large-width) {
+        background-image: url("../img/hit-mobile.svg");
+        width: 74px;
+        height: 74px;
+        top: 2px;
+      }
+    }
   }
 }
 
@@ -46,14 +76,16 @@
   line-height: 30px;
   text-transform: uppercase;
   background-color: $white;
-  padding: 16px 20px 16px 20px;
+  padding: 14px 20px 14px 20px;
 
   @media (min-width: $medium-width) {
     text-transform: none;
+    padding: 6px 20px 6px 12px;
   }
 
   @media (min-width: $large-width) {
     font-size: 18px;
+    padding: 12px 50px 17px 20px;
   }
 }
 

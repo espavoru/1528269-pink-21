@@ -1,16 +1,18 @@
 .features {
-  padding-top: 46px;
+  padding-top: 38px;
   background-image: url("../img/greybackground1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 104px;
+  background-position: 0 100px;
 
   @media (min-width: $medium-width) {
+    padding-top: 43px;
     background-position: 0 190px;
   }
 
   @media (min-width: $large-width) {
-    background-position: 0 293px;
+    padding-top: 60px;
+    background-position: 0 280px;
   }
 }
 
@@ -37,7 +39,7 @@
 }
 
 .features__title--subtitle {
-  padding-top: 30px;
+  padding-top: 27px;
 
   @media (min-width: $medium-width) {
     padding-top: 0;
@@ -51,28 +53,30 @@
   list-style: none;
   text-align: center;
   background-image: url("../img/phone-mobile.png");
-  background-position: top 120% left 50%;
+  background-position: top 107% left 50%;
   background-repeat: no-repeat;
   background-size: auto;
   margin: 0;
   padding: 0;
-  padding-top: 70px;
-  padding-bottom: 280px;
+  padding-top: 90px;
+  padding-bottom: 306px;
 
   @media (min-width: $medium-width) {
     text-align: left;
     background-image: url("../img/phone-table.png");
-    background-position: bottom 150% left;
-    padding-bottom: 48px;
-    padding-left: 330px;
+    background-position: bottom 121% left;
+    padding-top: 68px;
+    padding-bottom: 30px;
+    padding-left: 310px;
   }
 
   @media (min-width: $large-width) {
-    flex-direction: row;
-    flex-basis: 252px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
     text-align: center;
-    justify-content: space-between;
     background-image: none;
+    padding-top: 40px;
     padding-bottom: 76px;
     padding-left: 0;
   }
@@ -82,13 +86,13 @@
   color: $black;
   font-size: 18px;
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 6px;
+  padding-bottom: 12px;
 
   @media (min-width: $large-width) {
     font-size: 30px;
     line-height: 30px;
-    padding-top: 350px;
+    padding-top: 335px;
+    padding-bottom: 20px;
   }
 }
 
@@ -102,6 +106,17 @@
 }
 
 .features__item {
+  padding-top: 20px;
+  padding-bottom: 12px;
+
+  br {
+    display: none;
+
+    @media (min-width: $large-width) {
+      display: block;
+    }
+  }
+
   @media (min-width: $large-width) {
     background-repeat: no-repeat;
 
