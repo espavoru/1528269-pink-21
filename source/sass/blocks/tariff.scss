@@ -5,11 +5,11 @@
   padding: 0 95px 10px 95px;
 
   @media (min-width: $medium-width) {
-    padding: 13px 30px 10px 30px;
+    padding: 13px 32px 10px 30px;
   }
 
   @media (min-width: $large-width) {
-    padding: 20px 60px 18px 60px;
+    padding: 20px 58px 20px 60px;
   }
 
   &--one {
@@ -34,12 +34,14 @@
         background-image: url("../img/hit-table.svg");
         width: 61px;
         height: 61px;
+        left: 0;
       }
 
       @media (min-width: $large-width) {
         background-image: url("../img/hit-mobile.svg");
         width: 74px;
         height: 74px;
+        top: 2px;
       }
     }
   }

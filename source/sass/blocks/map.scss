@@ -1,20 +1,15 @@
 .map {
   position: relative;
   width: 100%;
-  height: 280px;
-  background-image: url("../img/map-mobile.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 200px;
   z-index: 1;
 
   @media (min-width: $medium-width) {
     height: 374px;
-    background-image: url("../img/map-table.jpg");
   }
 
   @media (min-width: $large-width) {
     height: 502px;
-    background-image: url("../img/map-desktop.jpg");
   }
 
   &::before {
@@ -25,12 +20,16 @@
     background-position-x: center;
     width: 100%;
     height: 123px;
-    z-index: 2;
+    z-index: 4;
     left: 0;
-    top: -50px;
+    top: -90px;
+
+    @media (min-width: $medium-width) {
+      top: -60px;
+    }
 
     @media (min-width: $large-width) {
-      top: 0;
+      top: -20px;
     }
   }
 
@@ -46,5 +45,26 @@
     background-color: $pink;
     border: 10px solid $white;
     border-radius: 50%;
+  }
+}
+
+.map__block {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  z-index: 3;
+  background-image: url("../img/map-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+
+  @media (min-width: $medium-width) {
+    height: 374px;
+    background-image: url("../img/map-table.jpg");
+  }
+
+  @media (min-width: $large-width) {
+    height: 502px;
+    background-image: url("../img/map-desktop.jpg");
   }
 }

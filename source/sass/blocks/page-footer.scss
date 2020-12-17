@@ -2,6 +2,7 @@
   @include container;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   min-height: 284px;
 
@@ -31,12 +32,16 @@
 }
 
 .page-footer__logo {
+  margin-top: 11px;
   margin-bottom: 35px;
 
   @media (min-width: $medium-width) {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     margin-right: auto;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: -15px;
   }
 }
 
@@ -68,6 +73,7 @@
 
 .copyright__link {
   margin-left: 15px;
+  margin-top: -6px;
 
   &:hover {
     path {
@@ -81,7 +87,14 @@
 }
 
 .copyright__text {
+  margin-top: 7px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 2px;
+  }
+
   @media (min-width: $large-width) {
     font-size: 18px;
+    margin-top: -3px;
   }
 }

@@ -6,10 +6,15 @@
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 18px;
-  padding-bottom: 13px;
+  padding-bottom: 14px;
   border-bottom: 1px solid $black;
   box-shadow: 0 -1px 0 $black,
     inset 0 1px 0 rgba($white, 0.15);
+
+  @media (min-width: $medium-width) {
+    padding-top: 18px;
+    padding-bottom: 13px;
+  }
 
   @media (min-width: $large-width) {
     background-color: transparent;
@@ -17,7 +22,7 @@
     box-shadow: none;
     text-transform: none;
     font-weight: 400;
-    margin-right: 80px;
+    margin-left: 80px;
   }
 }
 

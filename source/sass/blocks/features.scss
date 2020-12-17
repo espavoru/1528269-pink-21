@@ -11,8 +11,8 @@
   }
 
   @media (min-width: $large-width) {
-    padding-top: 57px;
-    background-position: 0 293px;
+    padding-top: 60px;
+    background-position: 0 280px;
   }
 }
 
@@ -64,7 +64,7 @@
   @media (min-width: $medium-width) {
     text-align: left;
     background-image: url("../img/phone-table.png");
-    background-position: bottom 100% left;
+    background-position: bottom 121% left;
     padding-top: 68px;
     padding-bottom: 30px;
     padding-left: 310px;
@@ -73,6 +73,7 @@
   @media (min-width: $large-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
     text-align: center;
     background-image: none;
     padding-top: 40px;
@@ -90,8 +91,8 @@
   @media (min-width: $large-width) {
     font-size: 30px;
     line-height: 30px;
-    padding-top: 340px;
-    padding-bottom: 18px;
+    padding-top: 335px;
+    padding-bottom: 20px;
   }
 }
 

@@ -48,7 +48,7 @@
   font-weight: 300;
   width: 300px;
   margin: 0;
-  padding-top: 95px;
+  padding-top: 90px;
   padding-bottom: 320px;
 
   @media (min-width: $medium-width) {
@@ -69,7 +69,7 @@
 .download__text {
   font-weight: 300;
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 30px;
 
   @media (min-width: $medium-width) {
     font-size: 18px;
@@ -98,7 +98,7 @@
   display: flex;
   align-items: flex-end;
   min-height: 60px;
-  margin-left: 30px;
+  margin-left: 34px;
   padding-bottom: 16px;
 
   &:first-child {
