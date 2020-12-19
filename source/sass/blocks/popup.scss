@@ -1,13 +1,48 @@
 .popup {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  &--error {
+    top: 1171px;
+  }
+
+  &--success {
+    top: 1642px;
+  }
+
   @media (min-width: $medium-width) {
     display: flex;
     justify-content: center;
+
+    &--error {
+      top: 909px;
+    }
+
+    &--success {
+      top: 1383px;
+    }
+  }
+
+  @media (min-width: $large-width) {
+    &--error {
+      top: 817px;
+    }
+
+    &--success {
+      top: 1275px;
+    }
   }
 }
 
 .popup__wrapper {
+  display: none;
   text-align: center;
+  width: 100%;
   padding-top: 40px;
+  background-color: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
 
@@ -25,7 +60,11 @@
   line-height: 24px;
   color: $black;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 24px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $medium-width) {
     font-size: 30px;
@@ -33,15 +72,25 @@
     padding-left: 65px;
     padding-right: 65px;
   }
+
+  @media (min-width: $large-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .popup__text {
+  br {
+    display: none;
+  }
+
   &--error {
-    margin-bottom: 43px;
+    margin-bottom: 0;
   }
 
   &--success {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $medium-width) {
@@ -49,18 +98,46 @@
     line-height: 24px;
     padding-left: 65px;
     padding-right: 65px;
+
+    &--success {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 36px;
+
+    br {
+      display: block;
+    }
+
+    &--error {
+      margin-bottom: 60px;
+    }
   }
 }
 
 .popup__button-area {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 50px;
 
   &--success {
     background-color: $gray;
+    padding-top: 47px;
+  }
+
+  @media (min-width: $medium-width) {
+    padding-top: 30px;
+    padding-bottom: 54px;
+
+    &--success {
+      padding-top: 45px;
+    }
   }
 
   @media (min-width: $large-width) {
     background-color: $gray;
+    padding-top: 52px;
+    padding-bottom: 50px;
   }
 }

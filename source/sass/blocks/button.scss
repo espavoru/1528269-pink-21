@@ -51,11 +51,36 @@
     background-color: $green;
     border: 2px solid $green;
     border-radius: 1px;
-    width: 276px;
+    width: 280px;
+    padding-top: 20px;
+    padding-bottom: 21px;
+
+    &:hover {
+      background-color: $greendark;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+      background-color: $greendark;
+    }
 
     @media (min-width: $medium-width) {
       width: 296px;
     }
+
+    @media (min-width: $large-width) {
+      width: 299px;
+    }
+  }
+
+  &--success {
+    @media (min-width: $large-width) {
+      width: 456px;
+    }
+  }
+
+  &--disabled {
+    background-color: $graylight;
   }
 }
 

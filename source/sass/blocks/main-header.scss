@@ -2,6 +2,7 @@
   position: relative;
   z-index: -1;
   margin-top: -66px;
+  height: 237px;
   background-color: $bluedarken;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
@@ -10,12 +11,12 @@
   @media (min-width: $medium-width) {
     margin-top: -110px;
     background-image: url("../img/back-tablet.jpg");
-    height: 450px;
+    height: 440px;
   }
 
   @media (min-width: $large-width) {
     background-image: url("../img/back-desktop.jpg");
-    height: 400px;
+    height: 394px;
   }
 }
 
@@ -23,16 +24,16 @@
   @include container;
   color: $white;
   text-align: center;
-  padding-top: 102px;
+  padding-top: 73px;
   padding-bottom: 51px;
 
   @media (min-width: $medium-width) {
-    padding-top: 140px;
-    padding-bottom: 74px;
+    padding-top: 138px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $large-width) {
-    padding-bottom: 104px;
+    padding-top: 130px;
   }
 }
 
