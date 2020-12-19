@@ -1,0 +1,23 @@
+.market__item {
+  display: flex;
+  align-items: flex-end;
+  min-height: 60px;
+  margin-left: 34px;
+  padding-bottom: 16px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @media (min-width: $medium-width) {
+    &:first-child {
+      padding-left: 45px;
+    }
+
+    padding-left: 5px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 23px;
+  }
+}

@@ -17,12 +17,17 @@
   }
 
   @media (min-width: $large-width) {
+    position: relative;
     background-color: transparent;
     border: none;
     box-shadow: none;
     text-transform: none;
     font-weight: 400;
     margin-left: 80px;
+
+    &--active {
+      border-bottom: 2px solid $white;
+    }
   }
 }
 
