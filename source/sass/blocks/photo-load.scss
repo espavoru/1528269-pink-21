@@ -1,5 +1,9 @@
 .photo-load__wrapper {
   line-height: 30px;
+
+  @media (min-width: $large-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .photo-load__form {
@@ -10,19 +14,19 @@
   max-width: 940px;
   margin: auto;
   padding-top: 20px;
-  padding-bottom: 31px;
+  padding-bottom: 25px;
 
   @media (min-width: $medium-width) {
     grid-template-columns: 1fr 1fr;
     padding-top: 57px;
-    padding-bottom: 54px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $large-width) {
     margin-right: auto;
     margin-left: auto;
     padding: 0;
-    padding-top: 57px;
+    padding-top: 56px;
     padding-bottom: 57px;
   }
 }
@@ -30,16 +34,17 @@
 .photo-load__title {
   @include container;
   text-align: center;
+  margin-top: 21px;
   margin-bottom: 42px;
 
   @media (min-width: $medium-width) {
     font-size: 18px;
-    margin-top: 63px;
-    margin-bottom: 78px;
+    margin-top: 45px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $large-width) {
-    margin-top: 57px;
-    margin-bottom: 75px;
+    margin-top: 38px;
+    margin-bottom: 67px;
   }
 }
