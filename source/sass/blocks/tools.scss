@@ -3,8 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 42px;
-  margin-bottom: 28px;
+  margin-top: 34px;
   padding-bottom: 34px;
 
   @media (min-width: $medium-width) {
@@ -12,6 +11,11 @@
     flex-wrap: wrap;
     align-items: flex-start;
     margin: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $large-width) {
+    justify-content: flex-start;
   }
 
   &::after {
@@ -19,7 +23,7 @@
     position: absolute;
     width: 100%;
     height: 1px;
-    top: 130px;
+    top: 119px;
     background-color: rgba($bluedark, 0.1);
     padding-left: 20px;
     padding-right: 20px;
@@ -47,22 +51,117 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba($bluedark, 0.1);
-    padding: 20px 20px 20px 10px;
+    padding-right: 20px;
+
+    &--cut {
+      padding-bottom: 14px;
+    }
+
+    &--color {
+      padding-top: 8px;
+      padding-bottom: 11px;
+    }
+
+    &--contrast {
+      padding-top: 15px;
+      padding-bottom: 20px;
+    }
   }
 
   @media (min-width: $large-width) {
-    width: 410px;
-    padding: 0;
-    padding-bottom: 14px;
+    &--cut {
+      padding-bottom: 5px;
+    }
 
-    &:last-child {
+    &--color {
+      padding-top: 8px;
+      padding-bottom: 6px;
+    }
+
+    &--contrast {
+      padding-top: 12px;
       border-bottom: none;
     }
   }
 }
 
+.tools__item {
+  &--cut {
+    margin-left: 17px;
+  }
+
+  &--contrast {
+    margin-right: 18px;
+  }
+
+  @media (min-width: $medium-width) {
+    margin: 0;
+
+    &--cut {
+      margin-top: 3px;
+    }
+
+    &--color {
+      margin-top: 13px;
+    }
+
+    &--contrast {
+      margin-left: 4px;
+      margin-right: 3px;
+    }
+  }
+
+  @media (min-width: $large-width) {
+    margin: 0;
+
+    &--cut {
+      margin-top: -3px;
+    }
+
+    &--color {
+      margin-top: 4px;
+      margin-right: -3px;
+    }
+
+    &--contrast {
+      margin-top: 6px;
+      margin-left: 5px;
+      margin-right: 6px;
+    }
+  }
+}
 
 .tools__img {
+  @media (max-width: $small-width) {
+    path {
+      fill: rgba($bluedark, 0.3);
+    }
+
+    &:hover {
+      path {
+        fill: rgba($bluedark, 0.5);
+      }
+    }
+
+    &:active {
+      path {
+        fill: $pink;
+      }
+    }
+
+    &--active {
+      path {
+        fill: $pink;
+      }
+
+      &:hover {
+        path {
+          fill: $pink;
+        }
+      }
+    }
+  }
+
   @media (min-width: $medium-width) {
     &--cut {
       width: 22px;
@@ -100,7 +199,7 @@
 
 .tools__range-controls {
   position: relative;
-  margin-top: 39px;
+  margin-top: 29px;
 
   &--color,
   &--contrast {
@@ -110,7 +209,12 @@
   @media (min-width: $medium-width) {
     display: block;
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 29px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 0;
+    margin-left: 48px;
   }
 }
 
@@ -125,17 +229,54 @@
 
   @media (min-width: $large-width) {
     width: 288px;
+
+    &--cut {
+      margin-bottom: 10px;
+    }
   }
 }
 
 .tools__toogle {
   position: absolute;
-  top: -8px;
-  right: 33px;
-  width: 12px;
-  height: 12px;
+  top: -7px;
+  right: 32px;
+  width: 11px;
+  height: 11px;
   border: 2px solid $pink;
   background-color: $white;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $pink;
+  }
+
+  @media (min-width: $medium-width) {
+    &--cut {
+      right: 40px;
+    }
+
+    &--color {
+      right: 163px;
+    }
+
+    &--contrast {
+      right: 92px;
+    }
+  }
+
+  @media (min-width: $large-width) {
+    &--cut {
+      right: 206px;
+    }
+
+    &--color {
+      right: 25px;
+    }
+
+    &--contrast {
+      right: 111px;
+    }
+  }
 }

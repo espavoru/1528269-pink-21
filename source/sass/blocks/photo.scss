@@ -15,9 +15,24 @@
   }
 
   &--panorama {
+    background-color: $gray;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-bottom: 16px;
+    padding-left: 17px;
+
     @media (min-width: $medium-width) {
       flex-direction: row;
       height: auto;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: $large-width) {
+      max-width: 882px;
+      margin: auto;
+      padding-left: 27px;
+      padding-right: 31px;
     }
   }
 }
@@ -25,7 +40,23 @@
 .photo__autor {
   font-weight: 700;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 16px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 22px;
+  }
+
+  &--panorama {
+    margin-top: 18px;
+
+    @media (min-width: $medium-width) {
+      margin-top: 23px;
+    }
+
+    @media (min-width: $large-width) {
+      margin-top: 25px;
+    }
+  }
 }
 
 .photo__time {
@@ -37,10 +68,22 @@
 
 .photo__comment {
   margin-top: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 0;
+  }
 
   &--panorama {
+    margin-bottom: 12px;
+
     @media (min-width: $medium-width) {
       order: 2;
+      margin-bottom: 10px;
+
+      br {
+        display: none;
+      }
     }
   }
 }
@@ -49,13 +92,15 @@
   @media (min-width: $medium-width) {
     display: flex;
     margin-top: auto;
+    padding-bottom: 22px;
   }
 
   &--panorama {
     @media (min-width: $medium-width) {
       order: 1;
       margin-left: auto;
-      margin-top: 15px;
+      margin-top: 25px;
+      padding-bottom: 0;
     }
   }
 }
@@ -64,11 +109,11 @@
   font-size: 12px;
   text-transform: uppercase;
   color: $pink;
-  margin-left: 32px;
+  margin-left: 31px;
 
   @media (min-width: $medium-width) {
     margin-left: 0;
-    margin-right: 20px;
+    margin-right: 16px;
   }
 }
 
@@ -91,5 +136,27 @@
     background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+}
+
+.photo__img {
+  display: block;
+
+  @media (min-width: $medium-width) {
+    height: 300px;
+  }
+
+  @media (min-width: $large-width) {
+    height: 400px;
+  }
+
+  &--panorama {
+    @media (min-width: $medium-width) {
+      height: 509px;
+    }
+
+    @media (min-width: $large-width) {
+      height: 506px;
+    }
   }
 }

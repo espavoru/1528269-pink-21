@@ -83,26 +83,3 @@
     background-color: $graylight;
   }
 }
-
-.button__upload {
-  border: 3px solid $pink;
-  border-radius: 29px;
-  color: $pink;
-  background-color: transparent;
-  margin-top: 24px;
-  width: 280px;
-
-  @media (min-width: $medium-width) {
-    width: 260px;
-  }
-
-  @media (min-width: $large-width) {
-    width: 183px;
-  }
-
-  &--reset {
-    border: 3px solid $bluedark;
-    color: $bluedark;
-    opacity: 0.1;
-  }
-}

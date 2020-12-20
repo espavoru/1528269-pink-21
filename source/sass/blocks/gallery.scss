@@ -1,27 +1,86 @@
 .gallery__wrapper {
-  @include container;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .gallery__title {
+  @include container;
   line-height: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   text-align: center;
 
   @media (min-width: $medium-width) {
     font-size: 18px;
-    margin-top: 60px;
-    margin-bottom: 75px;
+    margin-top: 61px;
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 88px;
+  }
+}
+
+.gallery__text {
+  @media (min-width: $medium-width) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $large-width) {
+    br {
+      display: block;
+    }
   }
 }
 
 .gallery__photo {
   background-color: $gray;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
+
+  @media (min-width: $medium-width) {
+    padding-bottom: 0;
+  }
+
+  &--panorama {
+    position: relative;
+    background-color: $white;
+    padding-bottom: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 140px;
+      height: 36px;
+      top: 0;
+      right: 20px;
+      background-image: url("../img/panorama-day.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $medium-width) {
+        top: 57px;
+      }
+
+      @media (min-width: $large-width) {
+        top: 54px;
+        right: 130px;
+      }
+    }
+
+    @media (min-width: $medium-width) {
+      margin-bottom: 48px;
+    }
+
+    @media (min-width: $large-width) {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 .gallery__photo-inner {
+  @include container;
   display: grid;
 
   @media (min-width: $medium-width) {

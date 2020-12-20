@@ -7,6 +7,7 @@
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
 
   @media (min-width: $medium-width) {
     margin-top: -110px;
@@ -42,8 +43,18 @@
   line-height: 33px;
   font-weight: 300;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $medium-width) {
     font-size: 50px;
     line-height: 68px;
+  }
+
+  @media (min-width: $large-width) {
+    br {
+      display: block;
+    }
   }
 }
