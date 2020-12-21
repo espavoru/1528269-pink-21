@@ -396,10 +396,14 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0; }
+  @media (min-width: 660px) {
+    .download__market {
+      justify-content: flex-start; } }
 
 .market__item {
   display: flex;
