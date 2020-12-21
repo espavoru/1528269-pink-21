@@ -25,7 +25,13 @@
     font-weight: 400;
     margin-left: 80px;
 
-    &--active {
+    &--active::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+      width: 100%;
       border-bottom: 2px solid $white;
     }
   }
