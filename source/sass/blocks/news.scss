@@ -31,7 +31,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url("../img/time-table.png");
+    background-image: url("../img/time-table.svg");
     background-repeat: no-repeat;
     width: 238px;
     height: 276px;
@@ -40,7 +40,7 @@
 
     @media (min-width: $large-width) {
       padding-left: 500px;
-      background-image: url("../img/time-desktop.png");
+      background-image: url("../img/time-desktop.svg");
       width: 298px;
       height: 345px;
       top: -20px;

@@ -58,13 +58,26 @@
   background-repeat: no-repeat;
   border: none;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 100%;
+  }
+
   @media (min-width: $medium-width) {
     height: 374px;
     background-image: url("../img/map-table.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-table@2x.jpg");
+    }
   }
 
   @media (min-width: $large-width) {
     height: 502px;
     background-image: url("../img/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }

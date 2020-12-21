@@ -61,6 +61,11 @@
   padding-top: 90px;
   padding-bottom: 306px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/phone-mobile@2x.png");
+    background-size: 157px;
+  }
+
   @media (min-width: $medium-width) {
     text-align: left;
     background-image: url("../img/phone-table.png");
@@ -68,6 +73,11 @@
     padding-top: 68px;
     padding-bottom: 30px;
     padding-left: 310px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-table@2x.png");
+      background-size: 268px;
+    }
   }
 
   @media (min-width: $large-width) {
@@ -119,17 +129,30 @@
 
   @media (min-width: $large-width) {
     background-repeat: no-repeat;
+    background-size: 308px;
 
     &--mood {
       background-image: url("../img/phone-mood.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-mood@2x.png");
+      }
     }
 
     &--change-world {
       background-image: url("../img/phone-world.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-world@2x.png");
+      }
     }
 
     &--new-friends {
       background-image: url("../img/phone-friends.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-friends@2x.png");
+      }
     }
   }
 }

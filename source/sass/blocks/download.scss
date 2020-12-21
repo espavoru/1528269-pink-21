@@ -1,23 +1,36 @@
 .download {
   position: relative;
-  margin-top: -66px;
   background-color: $bluedarken;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 100% auto;
+  margin-top: -66px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
 
   @media (min-width: $medium-width) {
-    margin-top: -110px;
     background-image: url("../img/back-tablet.jpg");
+    background-size: cover;
+    margin-top: -110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $large-width) {
     background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 
 .download__wrapper {
-  @include container;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,18 +40,47 @@
   background-position: center 177px;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hand-mobile@2x.png");
+    background-size: 320px;
+  }
+
   @media (min-width: $medium-width) {
+    @include container;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     background-image: url("../img/hand-tablet.png");
     background-position: 0 bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-tablet@2x.png");
+      background-size: 660px;
+    }
   }
 
   @media (min-width: $large-width) {
     background-image: url("../img/hand-desktop.png");
     background-position: bottom left 30px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-desktop@2x.png");
+      background-size: 1050px;
+    }
+  }
+}
+
+.download__block {
+  position: relative;
+  background-color: $bluedarken;
+  width: 100%;
+  z-index: 2;
+
+  @media (min-width: $medium-width) {
+    position: static;
+    background-color: transparent;
+    width: auto;
   }
 }
 
@@ -65,7 +107,6 @@
   }
 }
 
-
 .download__text {
   font-weight: 300;
   margin: 0;
@@ -87,7 +128,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   list-style: none;
   margin: 0;
