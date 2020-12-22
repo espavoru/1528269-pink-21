@@ -9,15 +9,27 @@
   background-position: top;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
   @media (min-width: $medium-width) {
     margin-top: -110px;
     background-image: url("../img/back-tablet.jpg");
     height: 440px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $large-width) {
     background-image: url("../img/back-desktop.jpg");
     height: 394px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 

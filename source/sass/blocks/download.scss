@@ -37,7 +37,7 @@
   color: $white;
   text-align: center;
   background-image: url("../img/hand-mobile.png");
-  background-position: center 177px;
+  background-position: center 178px;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -76,11 +76,14 @@
   background-color: $bluedarken;
   width: 100%;
   z-index: 2;
+  margin-top: -3px;
+  margin-bottom: 3px;
 
   @media (min-width: $medium-width) {
     position: static;
     background-color: transparent;
     width: auto;
+    margin: 0;
   }
 }
 
